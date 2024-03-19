@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pop-up-menu {
+  border: 1px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  width: 250px;
+  z-index: 300;
+}
+.top-left-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn {
+  padding: 8px;
+}
+.menu-btn:hover {
+  background-color: rgb(245, 238, 238);
+  border-radius: 50%;
+}
+.yt-logo {
+  padding: 14px 14px 14px 16px;
+  position: relative;
+}
+.yt-logo svg {
+  width: 90px;
+  height: 20px;
+}
+
+.yt-logo::after {
+  content: "IN";
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.top-mid-div {
+  margin-left: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input {
+  padding-left: 20px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-input:focus {
+  background: url("search.svg") no-repeat;
+  background-size: 20px;
+  background-position-x: 10px;
+  background-position-y: center;
+  border: 1px solid blueviolet;
+  padding-left: 40px;
+}
+
+.search-btn {
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+}
+
+.search-btn:hover {
+  background-color: rgba(211, 211, 211, 0.422);
+}
+
+.search-btn:hover::after {
+  content: "Search";
+  position: absolute;
+  background-color: rgba(64, 63, 63, 0.769);
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  top: 62px;
+  left: 3px;
+  font-size: 12px;
+  z-index: 100;
+}
+.mic-btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(240, 234, 234);
+  border-radius: 50%;
+  position: relative;
+}
+
+.mic-btn:hover {
+  background-color: rgba(201, 196, 196, 0.514);
+}
+
+.mic-btn:hover::after {
+  content: "Search with your voice";
+  white-space: nowrap;
+  position: absolute;
+  background-color: rgba(64, 63, 63, 0.769);
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  top: 62px;
+  left: -30px;
+  font-size: 12px;
+  z-index: 100;
+}
+
+.top-end-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recorder {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.recorder:hover {
+  background-color: rgb(240, 229, 229);
+}
+
+.recorder:hover::after {
+  content: "Create";
+  position: absolute;
+  background-color: rgba(64, 63, 63, 0.769);
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  top: 62px;
+  left: 3px;
+  font-size: 12px;
+  z-index: 100;
+}
+.notification {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.notification:hover {
+  background-color: rgb(240, 229, 229);
+}
+
+.notification:hover::after {
+  content: "Notifications";
+  position: absolute;
+  background-color: rgba(64, 63, 63, 0.769);
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  top: 62px;
+  left: -10px;
+  font-size: 12px;
+  z-index: 100;
+}
+
+.profile {
+  width: 60px;
+  height: 34px;
+  padding: 1px 6px;
+}
+
+.pro-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.left-panel {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  box-sizing: border-box;
+  padding: 0 4px;
+}
+
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-menu a {
+  display: flex;
+  padding: 16px 0 14px;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  width: 64px;
+}
+
+.left-menu a:hover {
+  background-color: rgb(248, 244, 244);
+  border-radius: 8px;
+}
+.sub-main {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 12px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: rgb(246, 241, 241);
+  border-radius: 10px;
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.slick-prev:before {
+  content: url("left-arrow.svg");
+}
+
+.slick-next:before {
+  content: url("right-arrow.svg");
+}
+.slick-prev:before,
+.slick-next:before {
+  margin-left: 8px;
+  color: black;
+}
+
+.slick-disabled {
+  display: none !important;
+  pointer-events: none;
+}
