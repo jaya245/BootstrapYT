@@ -70,6 +70,7 @@ body {
 }
 
 .search-input:focus {
+  /* content: url("search.svg"); */
   background: url("search.svg") no-repeat;
   background-size: 20px;
   background-position-x: 10px;
@@ -254,18 +255,50 @@ body {
 
 .slick-prev:before {
   content: url("left-arrow.svg");
+  margin-left: 8px;
+  color: black;
 }
 
 .slick-next:before {
   content: url("right-arrow.svg");
-}
-.slick-prev:before,
-.slick-next:before {
-  margin-left: 8px;
+  margin-right: 8px;
   color: black;
 }
 
 .slick-disabled {
   display: none !important;
   pointer-events: none;
+}
+
+.center-div {
+  margin-left: 80px;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.my-card {
+  width: 100%;
+  border-radius: 14px;
+}
+.my-card-img-top {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.my-card-text {
+  margin-bottom: 0;
+}
+.heading-flex {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  justify-content: left;
+  align-items: top;
+  gap: 12px;
+}
+
+.profile-image {
+  width: 36px;
+  height: 36px;
 }
